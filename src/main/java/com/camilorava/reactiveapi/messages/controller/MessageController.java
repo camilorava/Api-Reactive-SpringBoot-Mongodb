@@ -1,6 +1,7 @@
 package com.camilorava.reactiveapi.messages.controller;
 
 import com.camilorava.reactiveapi.messages.domain.Message;
+import com.camilorava.reactiveapi.messages.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +10,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-public class MessageResource {
+public class MessageController {
 
     @Autowired
     private MessageService messageService;
